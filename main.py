@@ -1,14 +1,14 @@
 import numpy as np
-from load_data import load_file
-import plot as plt
-from compute_cost import cost_function
-from gradient_descent import descent
-from predict import predict
+from src.load_data import load_file
+import src.plot as plt
+from src.compute_cost import cost_function
+from src.gradient_descent import descent
+from src.predict import predict
 
 
 def main():
     # First load our data to X and Y
-    [X, Y] = load_file("data.txt")
+    [X, Y] = load_file("./data/data.txt")
     # Visualize data using matplotlib
     plt.plot_data(X, Y)
 

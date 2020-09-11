@@ -1,6 +1,3 @@
-import numpy as np
-
-
 def load_file(filename):
     f = open(filename, "r")
     X = []
