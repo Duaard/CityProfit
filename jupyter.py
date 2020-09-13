@@ -43,7 +43,7 @@ plt.ylabel('Profit in $10,000s')
 ax.scatter(df_x, df_y)
 
 # %% [markdown]
-# Just from looking at the data, it is fair to say that as the population increase so thus the profit.
+# Just from looking at the data, it is fair to say that as the population increase so does the profit.
 #
 # The main goal of Linear Regression is to try and draw a line that will fit all these points, or at least minimize the average distance from all points in respect to their Y-values.
 #
@@ -121,11 +121,11 @@ print(cost_function(X_1, Y, theta, alpha))
 # %%
 theta = np.zeros(2)
 j_hist = []
-theta_hist = [theta]
+theta_hist = []
 for i in range(iterations):
     j_hist.append(cost_function(X_1, Y, theta, alpha))
-    theta = descent(X_1, Y, theta, alpha)
     theta_hist.append(theta)
+    theta = descent(X_1, Y, theta, alpha)
 
 print("Training done!")
 print(f"Final JCost: {j_hist[-1]}")
