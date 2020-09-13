@@ -8,10 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from IPython import get_ipython
-
-# %%
-from IPython import get_ipython
-
+get_ipython().run_line_magic('matplotlib', 'inline')
 # %% [markdown]
 # # City Profit
 
@@ -23,11 +20,7 @@ from IPython import get_ipython
 
 # ## Data
 # The file *data.txt* contains the dataset for our linear regression problem. The first column is the population of a city and the second column is the profit of a food truck in that city. A negative value for profit indicates a loss.
-
-# %%
-get_ipython().run_line_magic('matplotlib', 'inline')
-
-# %% [markdown]
+#
 # ## Linear Regression
 # Read the *data.txt* and peek at it's content using Pandas
 # %%
