@@ -25,3 +25,9 @@ Here is the first ten entries of the data
 | 8.5781                | 12                  |
 | 6.4862                | 6.5987              |
 | 5.0546                | 3.8166              |
+
+## Solution
+
+It is best to explore the [CityProfit](./CityProfit.ipynb) for a detailed step-by-step on how to apply Linear Regression to this problem.
+
+You can also run *main.py* to run Linear Regression. It will call the scripts inside the *src* folder. It is best to have a Conda environment running but it can be ran with only **pandas**, **matplotlib**, and **numpy** installed.
