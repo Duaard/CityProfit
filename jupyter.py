@@ -110,7 +110,7 @@ print(cost_function(X_1, Y, theta, alpha))
 #  def descent(X: np.array, Y: np.array, theta: np.array, alpha):
 #      m = len(Y)
 #      h = X.dot(theta)
-#      theta = theta - (X.transpose().dot(h - Y) * (alpha / m))
+#      theta = theta - ((h - Y).dot(X) * (alpha/m))
 # ```
 # Again, given X, Y, theta and alpha, the function just follows the formula for Gradient Descent and returns the updated theta value.
 #
